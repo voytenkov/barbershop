@@ -30,87 +30,92 @@
   </header>
 
   <main>
-  <h1 class="visually-hiden">Барбершоп "Бородинский"</h1>
+  <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
     <section class="features">
-     <h2 class="visually-hiden">Наши преимущества</h2>
+     <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="features-items">
         <li class="features-item">
           <h3>Быстро</h3>
-          <p class="feature-description"></p>
+          <p class="feature-description">мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
         </li>
         <li class="features-item">
           <h3>Круто</h3>
-          <p class="feature-description"></p>
+          <p class="feature-description">забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.</p>
         </li>
         <li class="features-item">
           <h3>Дорого</h3>
-          <p class="feature-description"></p>
+          <p class="feature-description">наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?</p>
         </li>
       </ul>
     </section>
       
-        <section class="news">
-          <h2>Новости</h2>
-          <ul class="news-list">
-            <li class="news-items">
-              <p class="news-description">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМЕЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                <time datetime="2016-01-11"></time>
-            </li>
-            <li class="news-items">
-              <p class="news-description">В НАШЕЙ КОМАДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-              <time datetime="2016-01-18"></time>
-            </li>
-          </ul>
-          <a href="news.html" class="button">ВСЕ НОВОСТИ</a>
-        </section>
-        <section class="gallery">
-          <h2>ФОТОГАЛЕРЕЯ</h2>
-          <figure class="gallery-content">
-            <a href="#">
-              <img src="img/content-photo.jpg" width="286" height="164" alt="Интерьер">
-            </a>
-          </figure>
-          <span class="button button-gallery button-gallery-back">Назад</span>
-          <span class="button button-gallery button-gallery-forward">Вперед</span>
-        </section>
-        <section class="contacts">
-         <h2>Контактная информация</h2>
-          <p>
-            барбершоп "бородинский"<br>
-            адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
-            телефон: +7 (495) 666-02-66
-          </p>
-           <p>
-            время работы<br>
-            пн-пт: с 10:00 до 20:00<br>
-            сб-вс: с 10:00 до 19:00
-          </p>
-          <a href="map.html" class="button button-contacts">как проехать</a>
-          <a href="contacts.html" class="button button-contacts">обратная связь</a>
-        </section>
-        <section class="appointment">
-         <h2>Записаться</h2>
-           <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-           <form class="appointment-form" action="http://yandex.ru" method="post">
-             <p class="appointment-item">
-               Дата
-               <input type="text" name="date" value="" placeholder="08.10.2017">
-             </p>
-             <p class="appointment-item">
-               Время
-               <input type="text" name="time" value="" placeholder="10:00">
-             </p>
-             <p class="appointment-item">
-               Ваше имя
-               <input type="text" name="name" value="" placeholder="Борода">
-             </p>
-             <p class="appointment-item">
-               Телефон
-               <input type="text" name="date" value="" placeholder="+7 123 456-78-90">
-             </p>
-             <button class="button appointment-button" type="submit">Отправить</button>
-           </form> 
-        </section>
+        <div class="index-columns">
+          <section class="news">
+            <h2>Новости</h2>
+            <ul class="news-list">
+              <li class="news-items">
+                <p class="news-description">нам наконец завезли ягермейстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+                  <time datetime="2016-01-11">11 января</time>
+              </li>
+              <li class="news-items">
+                <p class="news-description">в нашей комаде пополнение, борис "бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                <time datetime="2016-01-18">18 января</time>
+              </li>
+            </ul>
+            <a href="news.html" class="button">ВСЕ НОВОСТИ</a>
+          </section>
+          <section class="gallery">
+            <h2>ФОТОГАЛЕРЕЯ</h2>
+            <figure class="gallery-content">
+              <a href="#">
+                <img src="img/content-photo.jpg" width="286" height="164" alt="Интерьер">
+              </a>
+            </figure>
+            <span class="button button-gallery button-gallery-back">Назад</span>
+            <span class="button button-gallery button-gallery-forward">Вперед</span>
+          </section>
+        </div>
+        
+        <div class="index-columns">
+          <section class="contacts">
+           <h2>Контактная информация</h2>
+            <p>
+              барбершоп "бородинский"<br>
+              адрес: г.санкт-петербург, б.конюшенная, д.19/8<br>
+              телефон: +7 (495) 666-02-66
+            </p>
+             <p>
+              время работы<br>
+              пн-пт: с 10:00 до 20:00<br>
+              сб-вс: с 10:00 до 19:00
+            </p>
+            <a href="map.html" class="button button-contacts">как проехать</a>
+            <a href="contacts.html" class="button button-contacts">обратная связь</a>
+          </section>
+          <section class="appointment">
+           <h2>Записаться</h2>
+             <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+             <form class="appointment-form" action="http://yandex.ru" method="post">
+               <p class="appointment-item">
+                 Дата
+                 <input type="text" name="date" value="" placeholder="08.10.2017">
+               </p>
+               <p class="appointment-item">
+                 Время
+                 <input type="text" name="time" value="" placeholder="10:00">
+               </p>
+               <p class="appointment-item">
+                 Ваше имя
+                 <input type="text" name="name" value="" placeholder="Борода">
+               </p>
+               <p class="appointment-item">
+                 Телефон
+                 <input type="text" name="date" value="" placeholder="+7 123 456-78-90">
+               </p>
+               <button class="button appointment-button" type="submit">Отправить</button>
+             </form> 
+          </section>
+        </div>
   </main>
 
   <footer>
