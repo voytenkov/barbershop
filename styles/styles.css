@@ -105,6 +105,122 @@ a {
 }
 
 .button {
+  font: inherit;
+  
   color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  
   background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+.appointment-item input {
+  font: inherit;
+  
+  border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+  border-color: #663d15;
+}
+
+.main-footer {
+  color: #ffffff;
+  
+  background-color: #222222;
+  background-image: url("/img/pattern-dark.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #000000;
+  
+  background-color: #ffffff;
+}
+
+.modal {
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("/img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  color: #663d15;
+}
+
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:focus,
+.restore:hover {
+  text-decoration: none;
 }

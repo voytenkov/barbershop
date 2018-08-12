@@ -62,7 +62,7 @@
                 <time datetime="2016-01-18">18 января</time>
               </li>
             </ul>
-            <a href="news.html" class="button">ВСЕ НОВОСТИ</a>
+            <a href="news.html" class="button">все новости</a>
           </section>
           <section class="gallery">
             <h2>ФОТОГАЛЕРЕЯ</h2>
@@ -71,8 +71,8 @@
                 <img src="img/content-photo.jpg" width="286" height="164" alt="Интерьер">
               </a>
             </figure>
-            <span class="button button-gallery button-gallery-back">Назад</span>
-            <span class="button button-gallery button-gallery-forward">Вперед</span>
+            <button class="button button-gallery button-gallery-back" type="button">Назад</button>
+            <button class="button button-gallery button-gallery-forward" type="button">Вперед</button>
           </section>
         </div>
         
@@ -97,20 +97,20 @@
              <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
              <form class="appointment-form" action="http://yandex.ru" method="post">
                <p class="appointment-item">
-                 Дата
-                 <input type="text" name="date" value="" placeholder="08.10.2017">
+                 <label for="appointment-date">Дата</label>
+                 <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
                </p>
                <p class="appointment-item">
-                 Время
-                 <input type="text" name="time" value="" placeholder="10:00">
+                 <label for="appointment-time">Время</label>
+                 <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
                </p>
                <p class="appointment-item">
-                 Ваше имя
-                 <input type="text" name="name" value="" placeholder="Борода">
+                 <label for="appointment-name">Ваше имя</label>
+                 <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
                </p>
                <p class="appointment-item">
-                 Телефон
-                 <input type="text" name="date" value="" placeholder="+7 123 456-78-90">
+                 <label for="appointment-phone">Телефон</label>
+                 <input type="text" name="phone" value="" placeholder="+7 123 456-78-90">
                </p>
                <button class="button appointment-button" type="submit">Отправить</button>
              </form> 
@@ -118,7 +118,7 @@
         </div>
   </main>
 
-  <footer>
+  <footer class="main-footer">
     <p class="footer-contacts">
       Барбершоп "Бородинский"<br>
       Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -128,9 +128,9 @@
     <div class="footer-social">
       <p>Давайте дружить</p>
       <ul>
-        <li><a href="vk.com">Vkontakte</a></li>
-        <li><a href="fb.com">Facebook</a></li>
-        <li><a href="instagram.com">Instagram</a></li>
+        <li><a href="vk.com" class="social-button">Vkontakte</a></li>
+        <li><a href="fb.com" class="social-button">Facebook</a></li>
+        <li><a href="instagram.com" class="social-button">Instagram</a></li>
       </ul>
     </div>
     <p class="footer-copyright">
@@ -144,24 +144,32 @@
     <p>Введите свой логин и пароль</p>
     <form action="http://yandex.ru" method="post" class="login-form">
       <p>
-        <input class="login-icon-user" type="text" name="login" value="" placeholder="Логин">
+        <label for="user-login" class="visually-hidden">Логин</label>
+        <input id="user-login" class="login-icon-user" type="text" name="login" value="" placeholder="Логин">
       </p>
       <p>
-        <input class="login-icon-password" type="text" name="password" value="" placeholder="Пароль">
+        <label for="user-password" class="visually-hidden">Пароль</label>
+        <input id="user-password" class="login-icon-password" type="text" name="password" value="" placeholder="Пароль">
       </p>
       <p class="login-password-info">
-        <input class="visually-hidden" type="checkbox" name="remember">
-        Запомните меня
-        <a class="restore" href="restore.html">Я забыл пароль</a>
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+            Запомните меня
+        </label>
+        <a class="restore" href="restore.html">Я забыл пароль!</a>
       </p>
       <button class="button" type=submit>Войти</button>
     </form>
-    <span class="modal-close">x</span>
+    <button class="modal-close">Закрыть</button>
   </section>
   
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">x</span>
+    <p>
+      <img src="/img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close">Закрыть</button>
   </section>
 
 
