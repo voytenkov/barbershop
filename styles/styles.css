@@ -12,6 +12,11 @@
   src: local("PT Sans Narrow"), url("../fonts/ptsansnarrowbold.woff2");
 }
 
+/* * {
+  outline: 2px dotted red;
+  outline-offset: -2px;
+}*/
+
 body {
   margin: 0;
   padding: 0;
@@ -45,17 +50,87 @@ a {
 	border: 0;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.inner-page .main-header {
+  background-color: #000000;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #000000;
+  height: 70px;
+}
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   font-size: 16px;
   color: #ffffff;
   line-height: 20px;
   
-  background-color: #000000;
+  background-color: transparent;
+}
+
+.main-header-logo {
+  width: 368px;
+  height: 153px;
+  order: 1;
+}
+
+.inner-page .main-header-logo {
+  width: 111px;
+  height: 24px;
+  order: 0;
+  
+  padding: 23px 20px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-page .main-navigation {
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .site-navigation,
 .user-navigation {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-navigation {
+  width: 140px;
+  height: 70px;
+  display: flex;
+  align-items: center
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
+}
+
+.site-navigation {
+  width: 620px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.inner-page .site-navigation {
+  width: 540px;
 }
 
 .site-navigation a,
@@ -70,11 +145,20 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 85px;
+}
+
 .features-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .features-item {
+  width: 300px;
   text-align: center;
 }
 
@@ -84,6 +168,11 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+  
   color: #000000;
   background-color: #f8f5f2;
   background-image: url("/img/pattern-light.jpg");
@@ -94,6 +183,10 @@ a {
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
+}
+
+.news {
+  width: 380px;
 }
 
 .news-list {
@@ -122,6 +215,10 @@ a {
   background-color: #663d15;
 }
 
+.gallery {
+  width: 300px;
+}
+
 .gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
@@ -132,11 +229,21 @@ a {
   border: 2px solid #000000;
 }
 
+.contacts {
+  width: 330px;
+}
+
+.appointment {
+  width: 300px;
+}
+
 .appointment-item input:focus {
   border-color: #663d15;
 }
 
 .main-footer {
+  display: flex;
+  
   color: #ffffff;
   
   background-color: #222222;
@@ -171,6 +278,8 @@ a {
 }
 
 .footer-copyright {
+  margin-left: auto;
+  
   color: #ffffff;
   text-align: center;
 }
@@ -392,4 +501,7 @@ fieldset {
 
 .consist {
   list-style: none;
+}
+.footer-contacts {
+  margin-right: 90px;
 }
