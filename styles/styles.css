@@ -338,7 +338,7 @@ a {
   color: #000000;
   
   background-color: #f9f6f3;
-  background-image: url(/img/pattern-light.jpg);
+  background-image: url(../img/pattern-light.jpg);
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -349,24 +349,51 @@ a {
 }
 
 .breadcrumbs {
-  list-style: none;  
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs a {
   color: #000000;
   
   background-color: #ffffff;
-  background-image: url(/img/pattern-light.jpg);
+  background-image: url(../img/pattern-light.jpg);
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.breadcrumbs-item {
+  margin-right: 20px;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0px;
 }
 
 .breadcrumbs-current {
   color: #aba9a7;
 }
 
+.catalog-index-column {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.catalog-filter {
+  width: 180px;
+}
+
+.catalog-filter_item {
+  margin: 20px 0;
+}
+
 fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -378,6 +405,9 @@ fieldset {
 .filter ul {
   list-style: none;
   line-height: 18px;
+  padding: 0;
+  margin: 0;
+  
 }
 
 .filter-input:hover + label,
@@ -389,13 +419,30 @@ fieldset {
   color: #000000;
   opacity: 0.5;
 }
+
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  
   background-color: #f8f8f8;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -429,6 +476,9 @@ fieldset {
 }
 
 .pagination-list {
+  display: flex;
+  padding: 0;
+  margin-left: 240px;
   list-style: none;
 }
 
@@ -466,10 +516,14 @@ fieldset {
 }
 
 .item-image-list {
-    list-style: none;  
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .item-image {
+  margin-bottom: 20px;
+  
   background-color: #f8f8f8;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -479,12 +533,16 @@ fieldset {
 }
 
 .catalog-item-summary {
+  width: 390px;
+  
   color: #000000;
   font-size: 14px;
   line-height: 24px;
+  padding: 0;
+  margin: 0;
   
   background-color: #ffffff;
-  background-image: url("/img/pattern-light.jpg");
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -500,8 +558,29 @@ fieldset {
 }
 
 .consist {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .footer-contacts {
   margin-right: 90px;
 }
+
+
+
+.item-image-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-image {
+  width: 460px;
+  margin-bottom: 50px;
+}
+
+.item-availability {
+  padding: 0;
+  margin: 0;
+}
+
+
