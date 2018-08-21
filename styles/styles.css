@@ -108,13 +108,17 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 
 .user-navigation {
-  width: 140px;
-  height: 70px;
+  max-width: 140px;
   display: flex;
-  align-items: center
+}
+
+.user-navigation .login {
+  position: relative;
+  padding-left: 50px;
 }
 
 .inner-page .user-navigation {
@@ -123,10 +127,7 @@ a {
 
 .site-navigation {
   width: 620px;
-  height: 70px;
   display: flex;
-  justify-content: space-between;
-  align-items: center
 }
 
 .inner-page .site-navigation {
@@ -135,6 +136,8 @@ a {
 
 .site-navigation a,
 .user-navigation a {
+  display: block;
+  padding: 25px 20px;
   color: #ffffff;
 }
 
@@ -169,11 +172,11 @@ a {
 }
 
 .features-item h3::after {
-  display: block;
   content: " ";
   width: 20px;
   height: 20px;
   position: absolute;
+  top: 80px;
   left: 140px;
   transform: rotate(45deg);
   background-color: #ffffff;
