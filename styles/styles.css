@@ -248,8 +248,12 @@ a {
   margin-bottom: 25px;
 }
 
+.news-items {
+  margin-bottom: 25px;
+}
+
 .news-items p {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .news-items time {
@@ -257,20 +261,18 @@ a {
 }
 
 .button {
-  font: inherit;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 16px;
   
-  color: #ffffff;
+  font: inherit;
+    color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
   
   background-color: #000000;
   border: none;
-}
-
-.button {
-  width: 140px;
-  height: 44px;
 }
 
 .button:hover,
