@@ -60,13 +60,6 @@ a {
   background-color: #000000;
 }
 
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 60px;
-  background-color: #000000;
-  height: 70px;
-}
-
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -79,10 +72,20 @@ a {
   background-color: transparent;
 }
 
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  background-color: #000000;
+}
+
 .main-header-logo {
   width: 368px;
   height: 153px;
   order: 1;
+}
+
+.main-header {
+  margin-bottom: 70px;
 }
 
 .inner-page .main-header-logo {
@@ -121,6 +124,28 @@ a {
   padding-left: 50px;
 }
 
+.login::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  
+  width: 16px;
+  height: 18px;
+  
+  background-image: url("../img/login.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  
+  opacity: 0.3;
+}
+
+.login:hover::before,
+.login:active::before,
+.login:focus::before {
+  opacity: 1;
+}
+
 .inner-page .user-navigation {
   margin-left: auto;
 }
@@ -128,6 +153,7 @@ a {
 .site-navigation {
   width: 620px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .inner-page .site-navigation {
@@ -149,7 +175,7 @@ a {
 }
 
 .features {
-  margin-bottom: 85px;
+  margin-bottom: 80px;
 }
 
 .features-items {
@@ -161,14 +187,16 @@ a {
 }
 
 .features-item {
-  position: relative;
   width: 300px;
   text-align: center;
 }
 
 .features-item h3 {
+  position: relative;
   font-size: 30px;
   line-height: 42px;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .features-item h3::after {
@@ -176,17 +204,21 @@ a {
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 80px;
-  left: 140px;
+  top: 50px;
+  left: 45%;
   transform: rotate(45deg);
   background-color: #ffffff;
+}
+
+.features-item p {
+  margin: 0 10px;
 }
 
 .index-columns {
   display: flex;
   justify-content: space-between;
   padding: 50px 80px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   
   color: #000000;
   background-color: #f8f5f2;
@@ -198,14 +230,26 @@ a {
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px; 
 }
 
 .news {
   width: 380px;
+  margin: 0;
+  padding: 0;
 }
 
 .news-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.news-items p {
+  margin-bottom: 0;
 }
 
 .news-items time {
@@ -222,6 +266,11 @@ a {
   
   background-color: #000000;
   border: none;
+}
+
+.button {
+  width: 140px;
+  height: 44px;
 }
 
 .button:hover,
