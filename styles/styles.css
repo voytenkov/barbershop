@@ -282,29 +282,82 @@ a {
 }
 
 .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 300px;
 }
 
 .gallery-content {
+  height: 164px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
   background-color: #cccccc;
   border: 7px solid #ffffff;
 }
-.appointment-item input {
-  font: inherit;
-  
-  border: 2px solid #000000;
+
+.gallery-content img {
+  width: 100%;
+  height: auto;
+}
+
+.button-gallery {
+  width: 140px;
+  margin: 0;
 }
 
 .contacts {
   width: 330px;
 }
 
+.contacts p{
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .appointment {
   width: 300px;
 }
 
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.appointment-info {
+  margin: 0;
+}
+
+.appointment-item {
+  width: 140px;
+  margin: 0;
+}
+
+.appointment-item label {
+  display: block;
+  margin: 9px 15px;
+}
+
+.appointment-item input {
+  width: 140px;
+  box-sizing: border-box;
+  padding: 8px 15px;
+  
+  font: inherit;
+  border: 2px solid #000000;
+}
+
 .appointment-item input:focus {
   border-color: #663d15;
+}
+
+.appointment-button {
+  margin: 0;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .main-footer {
@@ -333,21 +386,62 @@ a {
   text-align: center;
 }
 
+.footer-social b {
+  display: block;
+  margin-bottom: 15px;
+}
+
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
-
-
 .social-button {
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  
+  background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path,
+.social-button:active path {
+  fill: #000000;
 }
 
 .footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 140px;
   margin-left: auto;
   
   color: #ffffff;
   text-align: center;
+}
+
+.footer-copyright b {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-copyright .button {
+  display: block;
+  margin-right: 0;
 }
 
 .footer-copyright .button:hover,
@@ -648,5 +742,3 @@ fieldset {
   padding: 0;
   margin: 0;
 }
-
-
