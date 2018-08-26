@@ -31,7 +31,7 @@ body {
   
   background-color: #000000;
   background-image: url("../img/background.jpg");
-  background-position: top center;
+  background-position: center 40px;
   background-repeat: no-repeat;
 }
 
@@ -39,15 +39,27 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	width: 1px;
-	margin: -1px;
-	padding: 0;
-	border: 0;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -154,10 +166,6 @@ a {
   width: 620px;
   display: flex;
   flex-wrap: wrap;
-}
-
-.inner-page .site-navigation {
-  width: 540px;
 }
 
 .site-navigation a,
@@ -361,7 +369,8 @@ a {
 }
 
 .main-footer {
-  display: flex;
+  padding: 60px 0;
+  margin-top: 65px;
   
   color: #ffffff;
   
@@ -369,6 +378,10 @@ a {
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.main-footer .container {
+  display: flex;
 }
 
 .footer-contacts a {
@@ -424,10 +437,8 @@ a {
 }
 
 .footer-copyright {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 140px;
+ 
+  width: 150px;
   margin-left: auto;
   
   color: #ffffff;
@@ -610,6 +621,10 @@ fieldset {
 }
 
 .catalog-item_title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: 18px;
   color: #000000;
   font-size: 14px;
   line-height: 18px;
@@ -617,11 +632,35 @@ fieldset {
   background-color: #ffffff;
 }
 
+.catalog-item_title span {
+  width: 100%;
+}
+
 .catalog-item_category {
   text-transform: none;
 }
 
+.catalog-item a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item_image {
+  order: -1;
+}
+
+.catalog-item_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px;
+  margin-right: 0;
+  padding: 0;
+}
+
 .catalog-item_price b {
+  width: 110px;
+  padding: 7px 0 8px 0;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
