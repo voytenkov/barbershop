@@ -528,6 +528,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs a {
+  position: relative;
   color: #000000;
   
   background-color: #ffffff;
@@ -546,6 +547,18 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.breadcrumbs-item a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 52px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
 .catalog-index-column {
@@ -647,6 +660,7 @@ fieldset {
 
 .catalog-item_image {
   order: -1;
+  margin: 0;
 }
 
 .catalog-item_price {
@@ -682,12 +696,15 @@ fieldset {
 }
 
 .pagination-item {
-  display: block;
+  margin-right: 10px;
   width: 43px;
   height: 43px;
 }
 
 .pagination-item a {
+  display: block;
+  text-align: center;
+  padding: 10px;
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
