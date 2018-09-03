@@ -636,6 +636,10 @@ input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg);
 }
 
+.modal-view {
+  display: block;
+}
+
 .inner-page {
   color: #000000;
   

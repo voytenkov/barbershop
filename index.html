@@ -205,6 +205,18 @@
     </section>
   </div>
 
+<script>
+  var loginLink = document.querySelector(".login");
+  var modalLogin = document.querySelector(".modal-login");
+  loginLink.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalLogin.classList.toggle("modal-view")});
+  var mapLink = document.querySelector('[href="map.html"]');
+  var modalMap = document.querySelector(".modal-map");
+  mapLink.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalMap.classList.add("modal-view")});
+</script>
 
 </body>
 </html>
