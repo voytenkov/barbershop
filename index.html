@@ -208,11 +208,20 @@
 <script>
   var loginLink = document.querySelector(".login");
   var modalLogin = document.querySelector(".modal-login");
-  loginLink.addEventListener("click", function(evt){
-    evt.preventDefault();
-    modalLogin.classList.toggle("modal-view")});
+  var modalClose = document.querySelector(".modal-close");
   var mapLink = document.querySelector('[href="map.html"]');
   var modalMap = document.querySelector(".modal-map");
+  var focusLogin = modalLogin.querySelector("[name=login]");
+  
+  loginLink.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalLogin.classList.toggle("modal-view");
+    focusLogin.focus();
+  });
+  modalClose.addEventListener("click", function(evt){
+    evt.preventDefault();
+    modalLogin.classList.remove("modal-view")
+  });
   mapLink.addEventListener("click", function(evt){
     evt.preventDefault();
     modalMap.classList.add("modal-view")});
