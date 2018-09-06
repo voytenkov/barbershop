@@ -102,7 +102,7 @@
                 пн-пт: с 10:00 до 20:00<br>
                 сб-вс: с 10:00 до 19:00
               </p>
-              <a href="map.html" class="button button-contacts">как проехать</a>
+              <a href="map.html" class="button button-contacts button-contacts-map">как проехать</a>
               <a href="contacts.html" class="button button-contacts">обратная связь</a>
             </section>
             
@@ -198,34 +198,14 @@
   <div class="container">
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <p>
-        <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      </p>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBB4bLv0gB" width="780" height="560" frameborder="1" allowfullscreen="true"></iframe>
+       <p><img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
       <button class="modal-close">Закрыть</button>
     </section>
   </div>
 
-<script>
-  var loginLink = document.querySelector(".login");
-  var modalLogin = document.querySelector(".modal-login");
-  var modalClose = document.querySelector(".modal-close");
-  var mapLink = document.querySelector('[href="map.html"]');
-  var modalMap = document.querySelector(".modal-map");
-  var focusLogin = modalLogin.querySelector("[name=login]");
-  
-  loginLink.addEventListener("click", function(evt){
-    evt.preventDefault();
-    modalLogin.classList.toggle("modal-view");
-    focusLogin.focus();
-  });
-  modalClose.addEventListener("click", function(evt){
-    evt.preventDefault();
-    modalLogin.classList.remove("modal-view")
-  });
-  mapLink.addEventListener("click", function(evt){
-    evt.preventDefault();
-    modalMap.classList.add("modal-view")});
-</script>
+<script src="js/map.js"></script>
+<script src="js/login.js"></script>
 
 </body>
 </html>
